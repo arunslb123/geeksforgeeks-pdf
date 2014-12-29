@@ -4,8 +4,6 @@ from bs4 import BeautifulSoup, SoupStrainer
 
 http = httplib2.Http()
 s= 'http://www.geeksforgeeks.org/'
-to_crawl=[]
-crawled=[]
 i=0
 to_crawl.append(s)
 status, response = http.request(s)
