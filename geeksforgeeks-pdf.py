@@ -5,9 +5,9 @@ from bs4 import BeautifulSoup, SoupStrainer
 http = httplib2.Http()
 s= 'http://www.geeksforgeeks.org/'
 i=0
+to_crawl=[]
 to_crawl.append(s)
 status, response = http.request(s)
-to_crawl=[]
 crawled=[]
 crawled.append(s)
 
